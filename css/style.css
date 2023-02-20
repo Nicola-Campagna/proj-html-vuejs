@@ -9,3 +9,28 @@
 .dbg {
     border: 1px solid black;
 }
+
+.height {
+    height: 500px;
+    background-color: lightgray;
+}
+
+/* JUMBOTRON */
+.jumbotron-container {
+    height: 70vh;
+    width: 99%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.jumbo-card {
+    min-height: 200px;
+}
+
+.top-50,
+.bottom-50 {
+    height: 50%;
+    border: 1px solid red;
+}
