@@ -5,6 +5,11 @@
     --white: #ffffff;
 }
 
+ul>li {
+    text-decoration: none;
+    list-style: none;
+}
+
 /* debug */
 .dbg {
     border: 1px solid black;
