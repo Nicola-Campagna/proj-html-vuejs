@@ -42,7 +42,9 @@
                     <nav class="col-12 d-flex justify-content-between dbg py-4 bg-dark text-white">
                         <!-- logo -->
                         <img :src="navbar.logo" alt="logo">
+                        <!-- tabella -->
                         <ul class="d-flex">
+                            <!-- lista link -->
                             <li v-for="links in navbar.link" class="px-3 mx-2">
                                 <a href="#">
                                     <!-- link in Vue -->
@@ -55,9 +57,11 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </a>
                             </li>
-
+                            <!-- chiusura lista -->
                         </ul>
+                        <!-- chiusura tabella -->
                     </nav>
+                    <!-- chiusura navbar -->
                 </div>
             </div>
         </head>
@@ -321,45 +325,48 @@
                 <div class="info-foot-container container">
                     <div class="row row-cols-4">
                         <div class="col">
-                            <h2>TITLE</h2>
+                            <h2>BOOKINGS</h2>
                             <ul>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
+                                <li v-for="info in foot.colFoot">
+                                    <a href="#">
+                                        {{info}}
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col">
-                            <h2>TITLE</h2>
+                            <h2>INFORMATION</h2>
                             <ul>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
+                                <li v-for="info in foot.colFoot">
+                                    <a href="#">
+                                        {{info}}
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col">
-                            <h2>TITLE</h2>
+                            <h2>SUPPORT</h2>
                             <ul>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
-                                <li>info text</li>
+                                <li v-for="info in foot.colFoot">
+                                    <a href="#">
+                                        {{info}}
+                                    </a>
+                                </li>
                             </ul>
                         </div>
+
                         <div class="col d-flex flex-column">
                             <h2>NEWSLETTER</h2>
                             <input type="email" name="email" id="email" placeholder="email">
                             <textarea name="" id="" cols="10" rows="5" placeholder="message"></textarea>
                             <button class="btn">bottone</button>
                         </div>
+
                     </div>
-                    <div class="row text-center">
-                        <div class=" col">
-                            footer texttextetextxtete
+
+                    <div class="row text-center py-4 my-5">
+                        <div :bind="foot.copyright" class=" col">
+                            {{foot.copyright}}
                         </div>
                     </div>
                 </div>
