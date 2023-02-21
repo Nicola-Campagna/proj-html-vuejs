@@ -41,9 +41,22 @@
                     <!-- navbar -->
                     <nav class="col-12 d-flex justify-content-between dbg py-4 bg-dark text-white">
                         <!-- logo -->
-                        <img src="#" alt="logo">
-                        <!-- link da gestire succ.in vue -->
-                        link link link link
+                        <img :src="navbar.logo" alt="logo">
+                        <ul class="d-flex">
+                            <li v-for="links in navbar.link" class="px-3 mx-2">
+                                <a href="#">
+                                    <!-- link in Vue -->
+                                    {{links}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <!-- icona lente di ingrandimento -->
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+
+                        </ul>
                     </nav>
                 </div>
             </div>
