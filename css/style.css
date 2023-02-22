@@ -5,6 +5,47 @@
     --white: #ffffff;
 }
 
+section {
+    background-color: var(--black);
+}
+
+.border-btn {
+    border-color: #f2870c;
+}
+
+.border-btn:hover {
+    border-color: #f2870c;
+    background-color: #f2870c;
+
+}
+
+.subtitle {
+    color: var(--orange);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h1,
+h2 {
+    color: var(--white);
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    color: var(--orange);
+    font-size: 20px;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 12px;
+}
+
 ul>li,
 a {
     text-decoration: none;
@@ -12,32 +53,101 @@ a {
     color: currentColor;
 }
 
+ul li a:hover {
+    color: var(--orange);
+
+}
+
+i {
+    color: #ffffff;
+}
+
+
+.p-20 {
+    font-size: 100px;
+}
+
 /* debug */
+.debug-h {
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.debug-h img {
+    height: 100%;
+}
+
 .dbg {
     border: 1px solid black;
 }
+
 
 .height {
     height: 500px;
     background-color: lightgray;
 }
 
-/* JUMBOTRON */
-.container-99 {
-    height: 70vh;
-    width: 99%;
-    margin: 0 auto;
 
-    text-align: center;
+
+.jumbotron-container {
+    height: 80vh;
+    object-fit: cover;
+    background-image: url("../img/image\ \(1\).png");
+    position: relative;
 }
 
+.jumbotron-text {
+    padding-top: 7rem;
+}
 
 .jumbo-card {
-    min-height: 200px;
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
-.top-50,
-.bottom-50 {
-    height: 50%;
-    border: 1px solid red;
+.jumbo-card img:hover {
+    fill: #f2870c;
+    /* background-color: #f2870c; */
+}
+
+.white {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+
+.story-jazz-container-bottom {
+    height: 60vh;
+    object-fit: cover;
+    background-image: url(../img/Video.jpg);
+}
+
+.album-container-img {
+    height: 60vh;
+    object-fit: cover;
+    background-image: url(../img/cms_parallax.jpg);
+}
+
+.album-container-bottom-img {
+
+    height: 30vh;
+    object-fit: cover;
+    background-image: url(../img/counter_parallax.jpg);
+}
+
+.album-container-bottom-img i {
+    font-size: 50px;
+}
+
+i:hover {
+    color: #f2870c;
+}
+
+.icon-card-music>i {
+    padding: 0 3px;
+
 }
